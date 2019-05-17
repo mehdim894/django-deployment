@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+{% extends "basicapp/base.html" %}
+  {% block body_block %}
+    <div class="jumbotron">
+      <h1>WELCOME TO Index!</h1>
+      <h2>This home page</h2>
+      <p>You Are Calling index.html inherited base.html</p>
+      <p>{{ text|cut:'hello' }}</p>
+      <p>{{ number|add:99 }}</p>
+    </div>
+  {% endblock %}
